@@ -1,0 +1,78 @@
+<header
+    class="sticky top-0 z-50 flex w-full items-center justify-between border-b border-[rgba(197,220,150,0.14)] bg-[rgba(16,19,14,0.82)] px-[clamp(22px,5vw,74px)] py-4 backdrop-blur-[18px] max-[600px]:py-4.25">
+    <a routerLink="/" class="group inline-flex items-center gap-2.5 no-underline" aria-label="Aya Helal home">
+        <app-brand-mark />
+        <span
+            class="font-display text-base font-semibold tracking-[-0.03em] text-cream transition-colors group-hover:text-lime">Aya
+            Helal</span>
+    </a>
+
+    <nav class="ml-auto mr-10.5 hidden items-center gap-8 max-[900px]:hidden min-[901px]:flex"
+        aria-label="Main navigation">
+        <a routerLink="/" fragment="about"
+            class="border-0 bg-transparent text-xs text-muted transition-colors hover:text-lime">
+            About
+        </a>
+        <a routerLink="/" fragment="skills"
+            class="border-0 bg-transparent text-xs text-muted transition-colors hover:text-lime">
+            Skills
+        </a>
+        <a routerLink="/" fragment="projects"
+            class="border-0 bg-transparent text-xs text-muted transition-colors hover:text-lime">
+            Projects
+        </a>
+        <a routerLink="/" fragment="contact"
+            class="border-0 bg-transparent text-xs text-muted transition-colors hover:text-lime">
+            Contact
+        </a>
+    </nav>
+
+    <a routerLink="/" fragment="contact"
+        class="hidden items-center gap-2 rounded-full border border-lime bg-transparent px-3.75 py-2.5 font-mono text-[10px] uppercase text-lime transition-colors hover:bg-lime hover:text-ink max-[900px]:hidden min-[901px]:inline-flex">
+        Let's talk
+        <svg lucideArrowUpRight [size]="16"></svg>
+    </a>
+
+    <button type="button" (click)="themeService.toggleTheme()"
+        class="ml-3 grid size-9 shrink-0 place-items-center rounded-full border border-lime bg-transparent text-lime transition hover:bg-lime hover:text-ink max-[900px]:ml-auto max-[900px]:mr-2"
+        [attr.aria-label]="themeService.isDark() ? 'Switch to light mode' : 'Switch to dark mode'">
+        {{ themeService.isDark() ? '☀' : '☾' }}
+    </button>
+
+
+    <button type="button" class="hidden place-items-center border-0 bg-transparent text-lime max-[900px]:grid"
+        (click)="toggleMenu()" [attr.aria-label]="menuOpen() ? 'Close menu' : 'Open menu'"
+        [attr.aria-expanded]="menuOpen()">
+        @if (menuOpen()) {
+        <svg lucideX [size]="22"></svg>
+        } @else {
+        <svg lucideMenu [size]="22"></svg>
+        }
+    </button>
+
+    @if (menuOpen()) {
+    <nav class="absolute top-18.75 right-5.5 left-5.5 flex flex-col border border-[#3d4a31] bg-[#151b12] shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
+        aria-label="Mobile navigation">
+        <a routerLink="/" fragment="about"
+            class="flex items-center justify-between border-0 border-b border-line bg-transparent p-4.25 text-left text-xs text-muted transition-colors hover:text-lime">
+            About
+            <svg lucideArrowRight [size]="16"></svg>
+        </a>
+        <a routerLink="/" fragment="skills"
+            class="flex items-center justify-between border-0 border-b border-line bg-transparent p-4.25 text-left text-xs text-muted transition-colors hover:text-lime">
+            Skills
+            <svg lucideArrowRight [size]="16"></svg>
+        </a>
+        <a routerLink="/" fragment="projects"
+            class="flex items-center justify-between border-0 border-b border-line bg-transparent p-4.25 text-left text-xs text-muted transition-colors hover:text-lime">
+            Projects
+            <svg lucideArrowRight [size]="16"></svg>
+        </a>
+        <a routerLink="/" fragment="contact"
+            class="flex items-center justify-between border-0 bg-transparent p-4.25 text-left text-xs text-muted transition-colors hover:text-lime">
+            Contact
+            <svg lucideArrowRight [size]="16"></svg>
+        </a>
+    </nav>
+    }
+</header>

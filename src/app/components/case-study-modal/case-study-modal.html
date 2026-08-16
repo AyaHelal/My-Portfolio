@@ -1,0 +1,58 @@
+<div class="fixed inset-0 z-40 grid place-items-center bg-[rgba(4,6,4,0.8)] p-6.25 backdrop-blur-[10px] max-[600px]:p-3"
+    role="presentation" (mousedown)="onBackdrop($event)">
+    <article
+        class="relative max-h-[min(720px,90vh)] w-[min(760px,100%)] overflow-y-auto border border-[#52683f] bg-[#182015] p-[clamp(28px,5vw,58px)] shadow-[0_25px_100px_rgba(0,0,0,0.4)] max-[600px]:p-[28px_22px]"
+        role="dialog" aria-modal="true" aria-labelledby="case-study-title">
+        <button type="button"
+            class="absolute top-4.5 right-4.5 grid size-8.5 place-items-center rounded-full border border-[#43543a] bg-transparent text-muted transition hover:border-lime hover:text-lime"
+            (click)="closed.emit()" aria-label="Close case study">
+            <svg lucideX [size]="20"></svg>
+        </button>
+
+        <div class="border-b border-line-soft pr-10 pb-7">
+            <p class="mb-6.25 font-mono text-[10px] leading-[1.4] tracking-[0.12em] text-muted uppercase">
+                {{ project().number }} / Case study
+            </p>
+            <h2 id="case-study-title"
+                class="mb-3 font-display text-[clamp(50px,8vw,89px)] font-medium tracking-[-0.085em] leading-[0.95] text-cream max-[600px]:text-[56px]">
+                {{ project().name }}<em class="not-italic text-lime">.</em>
+            </h2>
+            <p class="m-0 font-mono text-[10px] text-[#9da695] uppercase">
+                {{ project().type }} · {{ project().role }}
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-8.5 gap-y-7.75 py-8.25 max-[600px]:grid-cols-1 max-[600px]:gap-6">
+            <div>
+                <span class="mb-2.75 block font-mono text-[9px] tracking-[0.08em] text-lime uppercase">The
+                    problem</span>
+                <p class="m-0 text-sm leading-[1.6] text-[#bec5b4]">{{ project().problem }}</p>
+            </div>
+            <div>
+                <span class="mb-2.75 block font-mono text-[9px] tracking-[0.08em] text-lime uppercase">The
+                    solution</span>
+                <p class="m-0 text-sm leading-[1.6] text-[#bec5b4]">{{ project().solution }}</p>
+            </div>
+            <div>
+                <span class="mb-2.75 block font-mono text-[9px] tracking-[0.08em] text-lime uppercase">The
+                    challenge</span>
+                <p class="m-0 text-sm leading-[1.6] text-[#bec5b4]">{{ project().challenges }}</p>
+            </div>
+            <div>
+                <span class="mb-2.75 block font-mono text-[9px] tracking-[0.08em] text-lime uppercase">What I
+                    learned</span>
+                <p class="m-0 text-sm leading-[1.6] text-[#bec5b4]">{{ project().learned }}</p>
+            </div>
+        </div>
+
+        <div class="border-t border-line-soft pt-6">
+            <span class="mb-2.75 block font-mono text-[9px] tracking-[0.08em] text-lime uppercase">Technologies</span>
+            <div class="flex flex-wrap gap-1.75">
+                @for (item of project().stack; track item) {
+                <span class="rounded-full border border-chip px-2.25 py-1.5 font-mono text-[9px] text-[#d9e5c9]">{{
+                    item }}</span>
+                }
+            </div>
+        </div>
+    </article>
+</div>

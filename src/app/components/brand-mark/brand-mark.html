@@ -1,0 +1,17 @@
+@if (!logoError()) {
+<span [class]="
+        size() === 'sm'
+        ? 'grid size-8.25 place-items-center rounded-full border border-lime'
+        : 'grid size-11.75 place-items-center rounded-full border border-lime'
+    ">
+    <img src="/web-app-manifest-512x512.png" alt="Aya Helal" (error)="onLogoError()" class="size-full rounded-full object-contain" />
+</span>
+} @else {
+<span [class]="
+        size() === 'sm'
+        ? 'grid size-8.25 place-items-center rounded-full border border-lime font-mono text-[7px] -tracking-widest text-lime'
+        : 'grid size-11.75 place-items-center rounded-full border border-lime font-mono text-[8px] -tracking-widest text-lime'
+    " aria-hidden="true">
+    AH
+</span>
+}

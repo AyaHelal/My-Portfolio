@@ -1,0 +1,50 @@
+<section id="about" appAnimateOnScroll
+    class="mx-auto max-w-360 border-t border-[rgba(197,220,150,0.14)] px-[clamp(22px,5vw,74px)] py-[clamp(85px,10vw,145px)] max-[600px]:py-18.5">
+    <div
+        class="mb-17.5 flex items-center gap-6 max-[600px]:mb-12 max-[600px]:flex-wrap max-[600px]:items-start max-[600px]:gap-3.5">
+        <p class="m-0 shrink-0 font-mono text-[10px] leading-[1.4] tracking-[0.12em] text-muted uppercase">
+            02 / About me
+        </p>
+        <span class="h-px flex-1 bg-line-soft max-[600px]:order-3 max-[600px]:basis-full"></span>
+    </div>
+
+    <div
+        class="grid grid-cols-[0.9fr_1.1fr] items-start gap-[12vw] max-[900px]:gap-13.75 max-[600px]:grid-cols-1 max-[600px]:gap-12.5">
+        <div class="relative">
+            <h2
+                class="m-0 font-display text-[clamp(40px,5vw,75px)] font-medium tracking-[-0.085em] leading-[0.95] text-cream max-[600px]:text-[clamp(42px,13vw,64px)]">
+                A developer who<br /><em class="not-italic text-lime">cares about the why.</em>
+            </h2>
+            <svg lucideQuote class="absolute right-[7%] -bottom-11 text-lime opacity-70" [size]="31"></svg>
+        </div>
+
+        <div>
+            <p class="m-0 max-w-142.5 text-[clamp(18px,2vw,23px)] leading-normal tracking-[-0.03em] text-muted">
+                {{ personal.about }}
+            </p>
+            <div
+                class="mt-15 grid grid-cols-2 gap-4 max-[600px]:mt-11.5 max-[600px]:gap-x-2.5 max-[600px]:gap-y-4.5">
+                <div
+                    class="flex items-center gap-3 border-t border-line-soft pt-3.75 text-xs text-[#e0e4d5] max-[600px]:flex-col max-[600px]:items-start max-[600px]:gap-2 max-[600px]:text-[11px] [&_svg]:shrink-0 [&_svg]:text-lime">
+                    <svg lucideGraduationCap [size]="18"></svg>
+                    <span>{{ personal.education }}</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 border-t border-line-soft pt-3.75 text-xs text-[#e0e4d5] max-[600px]:flex-col max-[600px]:items-start max-[600px]:gap-2 max-[600px]:text-[11px] [&_svg]:shrink-0 [&_svg]:text-lime">
+                    <svg lucideBriefcaseBusiness [size]="18"></svg>
+                    <span>{{ personal.role }}</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 border-t border-line-soft pt-3.75 text-xs text-[#e0e4d5] max-[600px]:flex-col max-[600px]:items-start max-[600px]:gap-2 max-[600px]:text-[11px] [&_svg]:shrink-0 [&_svg]:text-lime">
+                    <svg lucideCode2 [size]="18"></svg>
+                    <span>React &amp; Angular</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 border-t border-line-soft pt-3.75 text-xs text-[#e0e4d5] max-[600px]:flex-col max-[600px]:items-start max-[600px]:gap-2 max-[600px]:text-[11px] [&_svg]:shrink-0 [&_svg]:text-lime">
+                    <svg lucideMapPin [size]="18"></svg>
+                    <span>{{ personal.location }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

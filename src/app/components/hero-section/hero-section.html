@@ -1,0 +1,106 @@
+<section id="home"
+    class="relative mx-auto grid min-h-[calc(100vh-76px)] max-w-360 grid-cols-[minmax(0,1.03fr)_minmax(340px,0.97fr)] items-center gap-10 px-[clamp(22px,5vw,74px)] pt-[clamp(75px,10vw,130px)] pb-22.5 max-[900px]:min-h-0 max-[900px]:grid-cols-1 max-[900px]:pt-23.25  max-[600px]:pt-6 max-[600px]:pb-17.5">
+    <div class="hero-content relative z-1 max-w-165 max-[900px]:order-2">
+        <p class="font-mono text-[10px] leading-[1.4] tracking-[0.12em] text-muted uppercase">
+            <span
+                class="mr-2.25 inline-block size-1.5 rounded-full bg-lime shadow-[0_0_0_4px_rgba(216,255,103,0.12)]"></span>
+            {{ personal.availability }}
+        </p>
+
+        <h1
+            class="my-8.25 font-display text-[clamp(64px,9.4vw,142px)] font-medium tracking-[-0.095em] leading-[0.84] text-cream max-[600px]:text-[clamp(58px,18vw,94px)]">
+            Hi, I'm<br /><span class="text-lime">{{ personal.name }}</span><b class="font-normal text-lime">—</b>
+        </h1>
+
+        <div class="mb-7.75 flex items-center gap-5.25 max-[600px]:flex-col max-[600px]:items-start max-[600px]:gap-2">
+            <p class="m-0 font-display text-[clamp(20px,2vw,28px)] font-medium tracking-tighter text-cream">
+                {{ personal.role }}
+            </p>
+            <span class="font-mono text-[10px] tracking-wider text-muted-2">{{
+                personal.stackLine
+                }}</span>
+        </div>
+
+        <p class="m-0 max-w-110 text-base leading-[1.7] text-muted max-[600px]:text-[15px]">
+            Building responsive and user-focused web applications with
+            <strong class="font-medium text-cream">React, Angular &amp; TypeScript.</strong>
+        </p>
+
+        <div class="mt-9.75 flex flex-wrap gap-3">
+            <a routerLink="/" fragment="projects"
+                class="inline-flex items-center justify-center gap-3.25 rounded-full border border-transparent bg-lime px-4.75 py-3.5 font-mono text-[10px] tracking-wider text-ink uppercase transition hover:-translate-y-0.5 hover:bg-lime-hover">
+                View projects
+                <svg lucideArrowDownRight [size]="17"></svg>
+            </a>
+            <a href="/AyaHelal_Resume.pdf" download="AyaHelal_Resume.pdf"
+                class="inline-flex items-center justify-center gap-3.25 rounded-full border border-[#3b4630] bg-transparent px-4.75 py-3.5 font-mono text-[10px] tracking-wider text-cream uppercase transition hover:-translate-y-0.5 hover:border-lime hover:text-lime">
+                Download CV
+                <svg lucideArrowDownRight [size]="17"></svg>
+            </a>
+        </div>
+
+        <div
+            class="mt-16.25 flex items-center gap-3.25 font-mono text-[9px] text-[#68705f] uppercase max-[600px]:mt-12">
+            <span>Find me on</span>
+            <a href="https://www.linkedin.com/in/aya-helal-9a10682b0/"
+                class="grid size-7.75 place-items-center rounded-full border border-[#394130] bg-transparent text-muted transition hover:border-lime hover:text-lime"
+                aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" class="size-4" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.57V9H3.56v11.45z" />
+                </svg>
+            </a>
+            <a href="https://github.com/AyaHelal"
+                class="grid size-7.75 place-items-center rounded-full border border-[#394130] bg-transparent text-muted transition hover:border-lime hover:text-lime"
+                aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" class="size-4" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M12 .5A11.5 11.5 0 0 0 8.36 22.91c.58.1.79-.25.79-.56v-2.17c-3.23.7-3.91-1.56-3.91-1.56-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.39.97.1-.75.41-1.27.74-1.56-2.58-.29-5.29-1.29-5.29-5.74 0-1.27.46-2.3 1.2-3.11-.12-.29-.52-1.47.11-3.07 0 0 .98-.31 3.2 1.19a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.19 3.2-1.19.63 1.6.23 2.78.11 3.07.75.81 1.2 1.84 1.2 3.11 0 4.46-2.72 5.45-5.31 5.73.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-visual relative min-h-137.5 max-[900px]:order-1 max-[900px]:mt-3.75 max-[900px]:min-h-110 max-[600px]:min-h-85 max-[600px]:left-0" aria-hidden="true">
+        <div class="absolute inset-[6%_4%_6%_11%] opacity-50 max-[600px]:bg-size-[29px_29px]" style="
+        background-image:
+            linear-gradient(rgba(166, 192, 115, 0.15) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(166, 192, 115, 0.15) 1px, transparent 1px);
+        background-size: 42px 42px;
+        mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+        "></div>
+        <div
+            class="absolute top-1/2 left-[54%] size-[min(32vw,430px)] -translate-x-1/2 -translate-y-1/2 rotate-22 rounded-full border border-[rgba(216,255,103,0.43)] max-[900px]:size-91.25 max-[600px]:size-71.25 max-[600px]:left-1/2">
+        </div>
+        <div
+            class="absolute top-1/2 left-[54%] h-[min(34vw,460px)] w-[min(20vw,268px)] -translate-x-1/2 -translate-y-1/2 rotate-51 rounded-full border border-[rgba(216,255,103,0.19)] max-[900px]:h-97.5 max-[900px]:w-58.75 max-[600px]:h-75 max-[600px]:w-45 max-[600px]:left-1/2">
+        </div>
+        <div
+            class="absolute top-1/2 left-[54%] grid size-[min(23vw,300px)] -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-lime text-ink shadow-[0_0_85px_rgba(216,255,103,0.1)] max-[900px]:size-65 max-[600px]:size-49 max-[600px]:left-1/2">
+
+            @if (!imageError()) {
+            <img src="/aya-helal.png" alt="Aya Helal" (error)="onImageError()"
+                class="size-full rounded-full object-cover" />
+            } @else {
+            <strong class="font-display text-[clamp(58px,8vw,108px)] font-semibold tracking-[-0.13em] leading-[0.8]">
+                AH
+            </strong>
+            }
+        </div>
+        <div
+            class="absolute top-[26%] -right-2.5 font-mono text-[9px] tracking-[0.12em] text-muted-3 [writing-mode:vertical-rl] rotate-180 max-[600px]:right-0">
+            01 / INTRODUCTION
+        </div>
+        <div
+            class="absolute right-[2%] bottom-[11%] flex items-center gap-2.25 font-mono text-[9px] text-lime uppercase max-[600px]:bottom-[4%] max-[600px]:text-[8px]">
+            <svg lucideSparkles [size]="15"></svg>
+            <span>Interfaces with intention</span>
+        </div>
+    </div>
+
+    <div
+        class="absolute bottom-9 left-[clamp(22px,5vw,74px)] flex items-center gap-3.5 font-mono text-[9px] text-muted-3 uppercase max-[600px]:hidden [&_svg]:text-lime">
+        <span>Scroll to explore</span>
+        <svg lucideArrowDownRight [size]="17"></svg>
+    </div>
+</section>

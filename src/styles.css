@@ -1,3 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "DM Mono", monospace;
+
+  --color-ink: #10130e;
+  --color-ink-soft: #141812;
+  --color-ink-muted: #161a13;
+  --color-cream: #f5f2e9;
+  --color-muted: #a9afa0;
+  --color-muted-2: #899180;
+  --color-muted-3: #69715f;
+  --color-lime: #d8ff67;
+  --color-lime-hover: #ecffad;
+  --color-lime-soft: #bedf55;
+  --color-line: #303a29;
+  --color-line-soft: #34402c;
+  --color-chip: #3d4934;
+}
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-ink font-sans text-cream;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  button,
+  a {
+    font: inherit;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label) {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Grain overlay needs a data-URL background; keep as one utility */
+@utility grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E");
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-hidden {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
