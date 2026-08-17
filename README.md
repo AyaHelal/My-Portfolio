@@ -1,7 +1,7 @@
 # Aya Helal Portfolio
 
 <div align="center">
-  <img src="./public/web-app-manifest-512x512.png" alt="Aya Helal portfolio logo" width="180" />
+  <img src="/public/web-app-manifest-512x512.png" alt="Aya Helal portfolio logo" width="180" />
 </div>
 
 <h3 align="center">Frontend Developer Portfolio</h3>
@@ -100,6 +100,18 @@ An online quiz platform focused on a simple and responsive user experience with 
 A task management application with authentication, CRUD operations, analytics, protected routes, and user-focused workflows.
 
 **Tech:** Angular 21, TypeScript, Supabase, Tailwind CSS
+
+**Role:** Frontend Developer
+
+---
+
+### Clinic Management
+
+**Clinic Management System**
+
+A clinical platform for patient tracking, real-time appointment scheduling, role-based authentication, and performance analytics..
+
+**Tech:** React, React Router, JavaScript, Bootstrap 5, JSON Server
 
 **Role:** Frontend Developer
 
@@ -266,20 +278,6 @@ The design focuses on:
 - Subtle animations and interactions
 - Accessible navigation
 - Consistent UI patterns
-
----
-
-## 📌 Current Status
-
-The portfolio is actively being refined.
-
-Planned improvements include:
-
-- Final project screenshots
-- Improved project case studies
-- Final responsive adjustments
-- Final UI and code cleanup
-- Production deployment
 
 ---
 
