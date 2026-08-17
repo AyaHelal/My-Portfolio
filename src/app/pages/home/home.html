@@ -3,11 +3,36 @@
     <app-site-header />
     <app-hero-section />
     <app-about-section />
+
+    @defer (on viewport) {
     <app-skills-section />
+    } @placeholder {
+    <div class="min-h-[400px]"></div>
+    }
+
+    @defer (on viewport) {
     <app-projects-section />
+    } @placeholder {
+    <div class="min-h-[600px]"></div>
+    }
+
+    @defer (on viewport) {
     <app-learning-section />
+    } @placeholder {
+    <div class="min-h-[400px]"></div>
+    }
+
+    @defer (on viewport) {
     <app-contact-section />
+    } @placeholder {
+    <div class="min-h-[300px]"></div>
+    }
+
+    @defer (on viewport) {
     <app-site-footer />
+    } @placeholder {
+    <div class="min-h-[100px]"></div>
+    }
 
     <app-back-to-top />
 </main>

@@ -80,8 +80,12 @@ linear-gradient(90deg, var(--color-hero-grid) 1px, transparent 1px);
             class="absolute top-1/2 left-[54%] grid size-[min(23vw,300px)] -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-lime text-ink shadow-[0_0_85px_rgba(216,255,103,0.1)] max-[900px]:size-65 max-[600px]:size-49 max-[600px]:left-1/2">
 
             @if (!imageError()) {
-            <img src="/profile/aya-helal.png" alt="Aya Helal" (error)="onImageError()"
-                class="size-full rounded-full object-cover" />
+            <picture>
+                <source srcset="/profile/aya-helal.webp" type="image/webp" />
+                <img src="/profile/aya-helal.png" alt="Aya Helal" (error)="onImageError()"
+                    width="300" height="300" fetchpriority="high"
+                    class="size-full rounded-full object-cover" />
+            </picture>
             } @else {
             <strong class="font-display text-[clamp(58px,8vw,108px)] font-semibold tracking-[-0.13em] leading-[0.8]">
                 AH

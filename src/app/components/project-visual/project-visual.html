@@ -1,8 +1,13 @@
 <div
     class="relative flex h-70 items-center justify-center overflow-hidden border-b border-line bg-card-bg max-[600px]:h-62.5">
-    <img
-    [src]="image()"
-    [alt]="theme() + ' project screenshot'"
-    class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-[1.02] max-[600px]:object-contain"
-/>
+    <picture>
+        <source [srcset]="image().replace('.png', '.webp')" type="image/webp" />
+        <img
+            [src]="image()"
+            [alt]="theme() + ' project screenshot'"
+            loading="lazy"
+            width="640" height="280"
+            class="h-full w-full object-cover object-top transition duration-500 group-hover:scale-[1.02] max-[600px]:object-contain"
+        />
+    </picture>
 </div>
