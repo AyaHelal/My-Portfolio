@@ -1,7 +1,7 @@
 # Aya Helal Portfolio
 
 <div align="center">
-  <img src="/public/web-app-manifest-512x512.png" alt="Aya Helal portfolio logo" width="180" />
+  <img src="/public/web-app-manifest-192x192.png" alt="Aya Helal portfolio logo" width="180" />
 </div>
 
 <h3 align="center">Frontend Developer Portfolio</h3>

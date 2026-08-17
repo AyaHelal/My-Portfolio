@@ -1,10 +1,10 @@
 import { Component, input, output } from '@angular/core';
-import { LucideX } from '@lucide/angular';
+import { LucideX , LucideArrowUpRight } from '@lucide/angular';
 import { Project } from '../../data/portfolio.content';
 
 @Component({
   selector: 'app-case-study-modal',
-  imports: [LucideX],
+  imports: [LucideX, LucideArrowUpRight],
   templateUrl: './case-study-modal.html',
   styleUrl: './case-study-modal.css',
 })

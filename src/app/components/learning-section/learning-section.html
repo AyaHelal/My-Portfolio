@@ -1,4 +1,4 @@
-<section id="learning" appAnimateOnScroll class="border-t border-[rgba(197,220,150,0.14)] bg-ink-muted">
+<section id="learning" appAnimateOnScroll class="border-t border-border-accent bg-ink-muted">
     <div class="mx-auto max-w-360 px-[clamp(22px,5vw,74px)] py-[clamp(85px,10vw,145px)] max-[600px]:py-18.5">
         <div
             class="mb-17.5 flex items-center gap-6 max-[600px]:mb-12 max-[600px]:flex-wrap max-[600px]:items-start max-[600px]:gap-3.5">
@@ -15,7 +15,7 @@
                     class="mb-6.25 font-display text-[clamp(40px,5vw,75px)] font-medium tracking-[-0.085em] leading-[0.95] text-cream max-[600px]:text-[clamp(42px,13vw,64px)]">
                     Good work is<br /><em class="not-italic text-lime">never finished.</em>
                 </h2>
-                <p class="m-0 max-w-75 text-sm leading-[1.6] text-[#929b87] max-[600px]:max-w-90">
+                <p class="m-0 max-w-75 text-sm leading-[1.6] text-learning-text max-[600px]:max-w-90">
                     I like staying curious, learning in public, and turning each project into a sharper way of
                     thinking.
                 </p>
@@ -24,7 +24,7 @@
             <div class="border-t border-line-soft">
                 @for (cert of certifications; track cert.title) {
                 <a [href]="cert.link" target="_blank" rel="noopener noreferrer"
-                    class="flex items-center gap-4.5 border-b border-line-soft py-5.5 no-underline transition hover:bg-[#1b2117]">
+                    class="flex items-center gap-4.5 border-b border-line-soft py-5.5 no-underline transition hover:bg-cert-hover">
                     <span class="grid size-11.75 shrink-0 place-items-center rounded-full border font-mono text-[9px] {{
                 cert.badgeClass === 'cert-scrum'
                     ? 'border-[#8bd9d1] text-[#8bd9d1]'
@@ -34,7 +34,7 @@
                         <h3 class="mb-1.25 font-display text-[17px] font-medium tracking-[-0.04em] text-cream">
                             {{ cert.title }}
                         </h3>
-                        <p class="m-0 font-mono text-[9px] text-[#89927d]">{{ cert.meta }}</p>
+                        <p class="m-0 font-mono text-[9px] text-text-cert">{{ cert.meta }}</p>
                     </div>
                     <svg lucideCheck class="ml-auto text-lime" [size]="18"></svg>
                 </a>

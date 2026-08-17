@@ -10,10 +10,10 @@ import { SkillColor, skillGroups } from '../../data/portfolio.content';
 import {AnimateOnScroll} from '../../shared/animate-on-scroll'
 
 const colorClasses: Record<SkillColor, string> = {
-  mint: 'bg-[#1b2117] [&_svg]:text-lime',
-  yellow: 'bg-[#202017] [&_svg]:text-[#f5c96a]',
-  peach: 'bg-[#201a15] [&_svg]:text-[#ff9c72]',
-  blue: 'bg-[#151c1e] [&_svg]:text-[#7bd4db]',
+  mint: 'bg-skill-mint [&_svg]:text-lime',
+  yellow: 'bg-skill-yellow [&_svg]:text-[#f5c96a]',
+  peach: 'bg-skill-peach [&_svg]:text-[#ff9c72]',
+  blue: 'bg-skill-blue [&_svg]:text-[#7bd4db]',
 };
 
 @Component({

@@ -14,6 +14,12 @@ export interface Project {
   solution: string;
   challenges: string;
   learned: string;
+
+  liveUrl?: string;
+  githubUrls?: {
+    label: string;
+    url: string;
+  }[];
 }
 
 export interface SkillGroup {
@@ -63,6 +69,20 @@ export const projects: Project[] = [
       'Keeping meeting states predictable while synchronizing media, chat, and responsive interfaces across more than 20 screens.',
     learned:
       'How thoughtful state boundaries and clear ownership make complex real-time products easier to build and explain.',
+    githubUrls: [
+    {
+      label: 'MEETZA',
+      url: 'https://github.com/AyaHelal/Meetza-front-end',
+    },
+    {
+      label: 'ADMIN',
+      url: 'https://github.com/AyaHelal/Meetza-front-end-Admin',
+    },
+    {
+      label: 'BACKEND',
+      url: 'https://github.com/ShahdSaed/Meetza-Backend',
+    },
+  ],
   },
   {
     number: '02',
@@ -82,6 +102,18 @@ export const projects: Project[] = [
       'Designing flexible question states and feedback patterns that work consistently across screen sizes.',
     learned:
       'How much clarity comes from reducing friction in the small moments between one answer and the next.',
+    liveUrl:
+      'https://qwizzy-front-end.vercel.app/',
+    githubUrls: [
+  {
+    label: 'FRONTEND',
+    url: 'https://github.com/faridaemadibrahim/Qwizzy-Front-End',
+  },
+  {
+    label: 'BACKEND',
+    url: 'https://github.com/ShahdSaed/Qwizzy',
+  }
+  ],
   },
   {
     number: '03',
@@ -101,6 +133,14 @@ export const projects: Project[] = [
       'Building a scalable Angular structure with lazy loading, route guards, and Signals while keeping the interface approachable.',
     learned:
       "How Angular's architecture and Signals can create a strong foundation for products that grow beyond a prototype.",
+    liveUrl:
+    'https://task-nest-sand.vercel.app/',
+    githubUrls: [
+  {
+    label: 'REPO',
+    url: 'https://github.com/AyaHelal/TaskNest',
+  }
+  ],
   },
   {
     number: '04',
@@ -120,6 +160,18 @@ export const projects: Project[] = [
       'Implementing role-based access control and state management for real-time schedule updates without performance bottlenecks.',
     learned:
       "How to structure scalable React applications using Context API for state management, Axios for REST APIs, and Chart.js for data visualization.",
+    liveUrl:
+      'https://ayahelal.github.io/clinic-management-system/',
+    githubUrls: [
+  {
+    label: 'FRONTEND',
+    url: 'https://github.com/AyaHelal/clinic-management-system',
+  },
+  {
+    label: 'BACKEND',
+    url: 'https://github.com/AyaHelal/clinic-backend',
+  }
+  ],
   },
 ];
 

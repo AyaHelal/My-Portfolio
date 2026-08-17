@@ -1,5 +1,5 @@
 <section id="projects" appAnimateOnScroll
-    class="mx-auto max-w-360 border-t border-[rgba(197,220,150,0.14)] px-[clamp(22px,5vw,74px)] py-[clamp(85px,10vw,145px)] max-[600px]:py-18.5">
+    class="mx-auto max-w-360 border-t border-border-accent px-[clamp(22px,5vw,74px)] py-[clamp(85px,10vw,145px)] max-[600px]:py-18.5">
     <div
         class="mb-17.5 flex items-end gap-6 max-[600px]:mb-12 max-[600px]:flex-wrap max-[600px]:items-start max-[600px]:gap-3.5">
         <div>
@@ -11,7 +11,7 @@
                 Things I've <em class="not-italic text-lime">built.</em>
             </h2>
         </div>
-        <p class="m-0 ml-auto text-xs leading-[1.6] text-[#727d69] max-[600px]:ml-0 max-[600px]:w-full">
+        <p class="m-0 ml-auto text-xs leading-[1.6] text-text-detail max-[600px]:ml-0 max-[600px]:w-full">
             A closer look at the products,<br />problems, and process.
         </p>
     </div>
@@ -19,7 +19,7 @@
     <div class="grid grid-cols-2 gap-4.25 max-[600px]:grid-cols-1">
         @for (project of projects; track project.name; let index = $index) {
         <article
-            class="group relative overflow-hidden border border-line bg-[#171c14] min-h-118.75 transition duration-250 hover:-translate-y-1 hover:border-[#c5e56b] max-[600px]:min-h-110">
+            class="group relative overflow-hidden border border-line bg-card-bg min-h-118.75 transition duration-250 hover:-translate-y-1 hover:border-[#c5e56b] max-[600px]:min-h-110">
 
             <app-project-visual [theme]="project.theme" [image]="project.image" />
 
@@ -30,7 +30,7 @@
                         class="mb-2.75 font-display text-[34px] font-medium tracking-[-0.08em] text-cream max-[600px]:text-[29px]">
                         {{ project.name }}
                     </h3>
-                    <p class="m-0 max-w-125 text-sm leading-normal text-[#9da695]">
+                    <p class="m-0 max-w-125 text-sm leading-normal text-text-body">
                         {{ project.description }}
                     </p>
                 </div>
@@ -39,12 +39,12 @@
                     <div class="flex flex-wrap gap-1.5">
                         @for (item of project.stack; track item) {
                         <span
-                            class="rounded-full border border-chip px-2.25 py-1.5 font-mono text-[9px] text-[#aab39e]">{{
+                            class="rounded-full border border-chip px-2.25 py-1.5 font-mono text-[9px] text-text-tag">{{
                             item }}</span>
                         }
                     </div>
                     <span
-                        class="w-45 shrink-0 text-right font-mono text-[9px] leading-[1.45] text-[#79846f] uppercase max-[600px]:w-auto max-[600px]:text-left">{{
+                        class="w-45 shrink-0 text-right font-mono text-[9px] leading-[1.45] text-text-role uppercase max-[600px]:w-auto max-[600px]:text-left">{{
                         project.role }}</span>
                 </div>
                 <button type="button"

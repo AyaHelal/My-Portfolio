@@ -1,4 +1,4 @@
-<section id="skills" appAnimateOnScroll class="border-t border-[rgba(197,220,150,0.14)] bg-ink-soft">
+<section id="skills" appAnimateOnScroll class="border-t border-border-accent bg-ink-soft">
     <div class="mx-auto max-w-360 px-[clamp(22px,5vw,74px)] py-[clamp(85px,10vw,145px)] max-[600px]:py-18.5">
         <div
             class="mb-17.5 flex items-center gap-6 max-[600px]:mb-12 max-[600px]:flex-wrap max-[600px]:items-start max-[600px]:gap-3.5">
@@ -6,7 +6,7 @@
                 03 / The toolkit
             </p>
             <span class="h-px flex-1 bg-line-soft max-[600px]:order-3 max-[600px]:basis-full"></span>
-            <p class="m-0 ml-auto text-xs leading-[1.6] text-[#727d69] max-[600px]:ml-0 max-[600px]:w-full">
+            <p class="m-0 ml-auto text-xs leading-[1.6] text-text-detail max-[600px]:ml-0 max-[600px]:w-full">
                 The right tool for<br />the right feeling.
             </p>
         </div>
@@ -15,7 +15,7 @@
             @for (group of groups; track group.label; let index = $index) {
             <article
                 class="min-h-65 rounded border border-line p-5.75 transition duration-250 hover:-translate-y-1.25 hover:border-lime max-[600px]:min-h-0 {{ group.colorClass }}">
-                <div class="flex items-center justify-between text-[#88917c]">
+                <div class="flex items-center justify-between text-skill-meta">
                     <span class="font-mono text-[10px]">0{{ index + 1 }}</span>
                     <svg [lucideIcon]="group.icon" [size]="22"></svg>
                 </div>
@@ -25,7 +25,7 @@
                 </h3>
                 <div class="flex flex-wrap gap-1.75">
                     @for (skill of group.skills; track skill) {
-                    <span class="rounded-full border border-chip px-2.25 py-1.5 font-mono text-[9px] text-[#aab39e]">{{
+                    <span class="rounded-full border border-chip px-2.25 py-1.5 font-mono text-[9px] text-text-tag">{{
                         skill }}</span>
                     }
                 </div>

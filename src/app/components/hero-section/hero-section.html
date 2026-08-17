@@ -2,8 +2,8 @@
     class="relative mx-auto grid min-h-[calc(100vh-76px)] max-w-360 grid-cols-[minmax(0,1.03fr)_minmax(340px,0.97fr)] items-center gap-10 px-[clamp(22px,5vw,74px)] pt-[clamp(75px,10vw,130px)] pb-22.5 max-[900px]:min-h-0 max-[900px]:grid-cols-1 max-[900px]:pt-23.25  max-[600px]:pt-6 max-[600px]:pb-17.5">
     <div class="hero-content relative z-1 max-w-165 max-[900px]:order-2">
         <p class="font-mono text-[10px] leading-[1.4] tracking-[0.12em] text-muted uppercase">
-            <span
-                class="mr-2.25 inline-block size-1.5 rounded-full bg-lime shadow-[0_0_0_4px_rgba(216,255,103,0.12)]"></span>
+            <span class="mr-2.25 inline-block size-1.5 rounded-full bg-lime shadow-[0_0_0_4px_rgba(120,140,45,0.28)]">
+            </span>
             {{ personal.availability }}
         </p>
 
@@ -33,17 +33,17 @@
                 <svg lucideArrowDownRight [size]="17"></svg>
             </a>
             <a href="/cv/AyaHelal_Resume.pdf" download="AyaHelal_Resume.pdf"
-                class="inline-flex items-center justify-center gap-3.25 rounded-full border border-[#3b4630] bg-transparent px-4.75 py-3.5 font-mono text-[10px] tracking-wider text-cream uppercase transition hover:-translate-y-0.5 hover:border-lime hover:text-lime">
+                class="inline-flex items-center justify-center gap-3.25 rounded-full border border-border-btn bg-transparent px-4.75 py-3.5 font-mono text-[10px] tracking-wider text-cream uppercase transition hover:-translate-y-0.5 hover:border-lime hover:text-lime">
                 Download CV
                 <svg lucideArrowDownRight [size]="17"></svg>
             </a>
         </div>
 
         <div
-            class="mt-16.25 flex items-center gap-3.25 font-mono text-[9px] text-[#68705f] uppercase max-[600px]:mt-12">
+            class="mt-16.25 flex items-center gap-3.25 font-mono text-[9px] text-text-hero uppercase max-[600px]:mt-12">
             <span>Find me on</span>
             <a href="https://www.linkedin.com/in/aya-helal-9a10682b0/" target="_blank" rel="noopener noreferrer"
-                class="grid size-7.75 place-items-center rounded-full border border-[#394130] bg-transparent text-muted transition hover:border-lime hover:text-lime"
+                class="grid size-7.75 place-items-center rounded-full border border-border-social bg-transparent text-muted transition hover:border-lime hover:text-lime"
                 aria-label="LinkedIn profile">
                 <svg viewBox="0 0 24 24" class="size-4" fill="currentColor" aria-hidden="true">
                     <path
@@ -51,7 +51,7 @@
                 </svg>
             </a>
             <a href="https://github.com/AyaHelal" target="_blank" rel="noopener noreferrer"
-                class="grid size-7.75 place-items-center rounded-full border border-[#394130] bg-transparent text-muted transition hover:border-lime hover:text-lime"
+                class="grid size-7.75 place-items-center rounded-full border border-border-social bg-transparent text-muted transition hover:border-lime hover:text-lime"
                 aria-label="GitHub profile">
                 <svg viewBox="0 0 24 24" class="size-4" fill="currentColor" aria-hidden="true">
                     <path
@@ -61,19 +61,20 @@
         </div>
     </div>
 
-    <div class="hero-visual relative min-h-137.5 max-[900px]:order-1 max-[900px]:mt-3.75 max-[900px]:min-h-110 max-[600px]:min-h-85 max-[600px]:left-0" aria-hidden="true">
+    <div class="hero-visual relative min-h-137.5 max-[900px]:order-1 max-[900px]:mt-3.75 max-[900px]:min-h-110 max-[600px]:min-h-85 max-[600px]:left-0"
+        aria-hidden="true">
         <div class="absolute inset-[6%_4%_6%_11%] opacity-50 max-[600px]:bg-size-[29px_29px]" style="
         background-image:
-            linear-gradient(rgba(166, 192, 115, 0.15) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(166, 192, 115, 0.15) 1px, transparent 1px);
+            linear-gradient(var(--color-hero-grid) 1px, transparent 1px),
+linear-gradient(90deg, var(--color-hero-grid) 1px, transparent 1px);
         background-size: 42px 42px;
         mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
         "></div>
         <div
-            class="absolute top-1/2 left-[54%] size-[min(32vw,430px)] -translate-x-1/2 -translate-y-1/2 rotate-22 rounded-full border border-[rgba(216,255,103,0.43)] max-[900px]:size-91.25 max-[600px]:size-71.25 max-[600px]:left-1/2">
+            class="absolute top-1/2 left-[54%] size-[min(32vw,430px)] -translate-x-1/2 -translate-y-1/2 rotate-22 rounded-full border border border-[var(--color-hero-ring)] max-[900px]:size-91.25 max-[600px]:size-71.25 max-[600px]:left-1/2">
         </div>
         <div
-            class="absolute top-1/2 left-[54%] h-[min(34vw,460px)] w-[min(20vw,268px)] -translate-x-1/2 -translate-y-1/2 rotate-51 rounded-full border border-[rgba(216,255,103,0.19)] max-[900px]:h-97.5 max-[900px]:w-58.75 max-[600px]:h-75 max-[600px]:w-45 max-[600px]:left-1/2">
+            class="absolute top-1/2 left-[54%] h-[min(34vw,460px)] w-[min(20vw,268px)] -translate-x-1/2 -translate-y-1/2 rotate-51 rounded-full border border border-[var(--color-hero-ring-soft)] max-[900px]:h-97.5 max-[900px]:w-58.75 max-[600px]:h-75 max-[600px]:w-45 max-[600px]:left-1/2">
         </div>
         <div
             class="absolute top-1/2 left-[54%] grid size-[min(23vw,300px)] -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-lime text-ink shadow-[0_0_85px_rgba(216,255,103,0.1)] max-[900px]:size-65 max-[600px]:size-49 max-[600px]:left-1/2">
@@ -103,4 +104,5 @@
         <span>Scroll to explore</span>
         <svg lucideArrowDownRight [size]="17"></svg>
     </div>
+
 </section>

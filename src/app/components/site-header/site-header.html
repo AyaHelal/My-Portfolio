@@ -1,5 +1,5 @@
 <header
-    class="sticky top-0 z-50 flex w-full items-center justify-between border-b border-[rgba(197,220,150,0.14)] bg-[rgba(16,19,14,0.82)] px-[clamp(22px,5vw,74px)] py-4 backdrop-blur-[18px] max-[600px]:py-4.25">
+    class="sticky top-0 z-50 flex w-full items-center justify-between border-b border-header-border bg-header-bg px-[clamp(22px,5vw,74px)] py-4 backdrop-blur-[18px] max-[600px]:py-4.25">
     <a routerLink="/" class="group inline-flex items-center gap-2.5 no-underline" aria-label="Aya Helal home">
         <app-brand-mark />
         <span
@@ -51,7 +51,7 @@
     </button>
 
     @if (menuOpen()) {
-    <nav class="absolute top-18.75 right-5.5 left-5.5 flex flex-col border border-[#3d4a31] bg-[#151b12] shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
+    <nav class="absolute top-18.75 right-5.5 left-5.5 flex flex-col border border-mobile-border bg-mobile-bg shadow-[0_20px_40px_rgba(0,0,0,0.3)]"
         aria-label="Mobile navigation">
         <a routerLink="/" fragment="about"
             class="flex items-center justify-between border-0 border-b border-line bg-transparent p-4.25 text-left text-xs text-muted transition-colors hover:text-lime">

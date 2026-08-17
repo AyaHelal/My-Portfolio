@@ -7,6 +7,7 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "DM Mono", monospace;
 
+  /* ── Core palette ── */
   --color-ink: #10130e;
   --color-ink-soft: #141812;
   --color-ink-muted: #161a13;
@@ -20,6 +21,47 @@
   --color-line: #303a29;
   --color-line-soft: #34402c;
   --color-chip: #3d4934;
+
+  /* ── Semantic tokens (dark defaults) ── */
+  --color-card-bg: #171c14;
+  --color-text-body: #9da695;
+  --color-text-detail: #727d69;
+  --color-text-role: #79846f;
+  --color-text-tag: #aab39e;
+  --color-text-info: #e0e4d5;
+  --color-text-sub: #bec5b4;
+  --color-text-cert: #89927d;
+  --color-text-hero: #68705f;
+  --color-skill-meta: #88917c;
+  --color-learning-text: #929b87;
+  --color-modal-tech: #d9e5c9;
+  --color-border-accent: rgba(197, 220, 150, 0.14);
+  --color-border-btn: #3b4630;
+  --color-border-social: #394130;
+  --color-header-bg: rgba(16, 19, 14, 0.82);
+  --color-header-border: rgba(197, 220, 150, 0.14);
+  --color-mobile-bg: #151b12;
+  --color-mobile-border: #3d4a31;
+  --color-modal-backdrop: rgba(4, 6, 4, 0.8);
+  --color-modal-bg: #182015;
+  --color-modal-border: #52683f;
+  --color-modal-close: #43543a;
+  --color-cert-hover: #1b2117;
+  --color-contact-border: #3d4a31;
+  --color-contact-hover: #26341a;
+  --color-contact-inner-border: #9dbd4b;
+  --color-contact-ring-1: rgba(16, 19, 14, 0.45);
+  --color-contact-ring-2: rgba(16, 19, 14, 0.24);
+
+  /* ── Skill card backgrounds ── */
+  --color-skill-mint: #1b2117;
+  --color-skill-yellow: #202017;
+  --color-skill-peach: #201a15;
+  --color-skill-blue: #151c1e;
+
+  --color-hero-grid: rgba(166, 192, 115, 0.15);
+  --color-hero-ring: rgba(216, 255, 103, 0.43);
+  --color-hero-ring-soft: rgba(216, 255, 103, 0.19);
 }
 
 
@@ -43,6 +85,66 @@
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label) {
     overflow-wrap: anywhere;
+  }
+
+  /* ── Light-mode overrides ── */
+  html.light {
+    --color-ink: #f7f8f2;
+    --color-ink-soft: #eef1e8;
+    --color-ink-muted: #e7ebe0;
+    --color-cream: #1b2117;
+    --color-muted: #5f6958;
+    --color-muted-2: #707a69;
+    --color-muted-3: #899180;
+    --color-lime: #6f8f24;
+    --color-lime-hover: #5f7b1f;
+    --color-lime-soft: #7fa02b;
+    --color-line: #d6ddcc;
+    --color-line-soft: #cbd4bf;
+    --color-chip: #dfe6d5;
+
+    --color-card-bg: #ffffff;
+    --color-text-body: #5f6958;
+    --color-text-detail: #707a69;
+    --color-text-role: #899180;
+    --color-text-tag: #5f6958;
+    --color-text-info: #2d3628;
+    --color-text-sub: #4a5243;
+    --color-text-cert: #707a69;
+    --color-text-hero: #899180;
+    --color-skill-meta: #899180;
+    --color-learning-text: #5f6958;
+    --color-modal-tech: #4a5243;
+    --color-border-accent: #d6ddcc;
+    --color-border-btn: #b3c299;
+    --color-border-social: #c4cfb8;
+    --color-header-bg: rgba(247, 248, 242, 0.88);
+    --color-header-border: #d6ddcc;
+    --color-mobile-bg: #f0f2ec;
+    --color-mobile-border: #c4cfb8;
+    --color-modal-backdrop: rgba(27, 33, 23, 0.5);
+    --color-modal-bg: #ffffff;
+    --color-modal-border: #c4cfb8;
+    --color-modal-close: #b3c299;
+    --color-cert-hover: #f0f2ec;
+    --color-contact-border: #9dbd4b;
+    --color-contact-hover: #3d5520;
+    --color-contact-inner-border: #9dbd4b;
+    --color-contact-ring-1: rgba(16, 19, 14, 0.25);
+    --color-contact-ring-2: rgba(16, 19, 14, 0.12);
+
+    --color-skill-mint: #f0f5e8;
+    --color-skill-yellow: #faf5e8;
+    --color-skill-peach: #faf0e8;
+    --color-skill-blue: #e8f3f5;
+
+    --color-hero-grid: rgba(90, 110, 55, 0.22);
+    --color-hero-ring: rgba(105, 135, 35, 0.48);
+    --color-hero-ring-soft: rgba(105, 135, 35, 0.28);
+  }
+
+  html.light body {
+    @apply bg-ink text-cream;
   }
 }
 
