@@ -32,7 +32,7 @@
                 View projects
                 <svg lucideArrowDownRight [size]="17"></svg>
             </a>
-            <a href="/AyaHelal_Resume.pdf" download="AyaHelal_Resume.pdf"
+            <a href="/cv/AyaHelal_Resume.pdf" download="AyaHelal_Resume.pdf"
                 class="inline-flex items-center justify-center gap-3.25 rounded-full border border-[#3b4630] bg-transparent px-4.75 py-3.5 font-mono text-[10px] tracking-wider text-cream uppercase transition hover:-translate-y-0.5 hover:border-lime hover:text-lime">
                 Download CV
                 <svg lucideArrowDownRight [size]="17"></svg>
@@ -42,7 +42,7 @@
         <div
             class="mt-16.25 flex items-center gap-3.25 font-mono text-[9px] text-[#68705f] uppercase max-[600px]:mt-12">
             <span>Find me on</span>
-            <a href="https://www.linkedin.com/in/aya-helal-9a10682b0/"
+            <a href="https://www.linkedin.com/in/aya-helal-9a10682b0/" target="_blank" rel="noopener noreferrer"
                 class="grid size-7.75 place-items-center rounded-full border border-[#394130] bg-transparent text-muted transition hover:border-lime hover:text-lime"
                 aria-label="LinkedIn profile">
                 <svg viewBox="0 0 24 24" class="size-4" fill="currentColor" aria-hidden="true">
@@ -50,7 +50,7 @@
                         d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.57V9H3.56v11.45z" />
                 </svg>
             </a>
-            <a href="https://github.com/AyaHelal"
+            <a href="https://github.com/AyaHelal" target="_blank" rel="noopener noreferrer"
                 class="grid size-7.75 place-items-center rounded-full border border-[#394130] bg-transparent text-muted transition hover:border-lime hover:text-lime"
                 aria-label="GitHub profile">
                 <svg viewBox="0 0 24 24" class="size-4" fill="currentColor" aria-hidden="true">
@@ -79,7 +79,7 @@
             class="absolute top-1/2 left-[54%] grid size-[min(23vw,300px)] -translate-x-1/2 -translate-y-1/2 place-content-center rounded-full bg-lime text-ink shadow-[0_0_85px_rgba(216,255,103,0.1)] max-[900px]:size-65 max-[600px]:size-49 max-[600px]:left-1/2">
 
             @if (!imageError()) {
-            <img src="/aya-helal.png" alt="Aya Helal" (error)="onImageError()"
+            <img src="/profile/aya-helal.png" alt="Aya Helal" (error)="onImageError()"
                 class="size-full rounded-full object-cover" />
             } @else {
             <strong class="font-display text-[clamp(58px,8vw,108px)] font-semibold tracking-[-0.13em] leading-[0.8]">

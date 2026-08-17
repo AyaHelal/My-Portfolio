@@ -1,7 +1,7 @@
-<div class="fixed inset-0 z-40 grid place-items-center bg-[rgba(4,6,4,0.8)] p-6.25 backdrop-blur-[10px] max-[600px]:p-3"
+<div class="fixed inset-0 z-40 grid translate-y-4 place-items-center bg-[rgba(4,6,4,0.8)] p-6.25 backdrop-blur-[10px] max-[600px]:translate-y-4 max-[600px]:p-3"
     role="presentation" (mousedown)="onBackdrop($event)">
     <article
-        class="relative max-h-[min(720px,90vh)] w-[min(760px,100%)] overflow-y-auto border border-[#52683f] bg-[#182015] p-[clamp(28px,5vw,58px)] shadow-[0_25px_100px_rgba(0,0,0,0.4)] max-[600px]:p-[28px_22px]"
+        class="relative max-h-[calc(100vh-95px)] w-[min(760px,100%)] translate-y-6 overflow-y-auto border border-[#52683f] bg-[#182015] p-[clamp(28px,5vw,58px)] shadow-[0_25px_100px_rgba(0,0,0,0.4)] max-[600px]:h-[calc(100vh-120px)] max-[600px]:max-h-none max-[600px]:translate-y-6 max-[600px]:p-[28px_22px]"
         role="dialog" aria-modal="true" aria-labelledby="case-study-title">
         <button type="button"
             class="absolute top-4.5 right-4.5 grid size-8.5 place-items-center rounded-full border border-[#43543a] bg-transparent text-muted transition hover:border-lime hover:text-lime"

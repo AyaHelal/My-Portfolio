@@ -157,7 +157,16 @@ public/
 ├── portfolio-logo.svg
 ├── site.webmanifest
 ├── web-app-manifest-512x512.png
-└── AyaHelal_Resume.pdf
+├── cv/
+│    └── AyaHelal_Resume.pdf
+├── projects/
+│   ├── clinic.png
+│   ├── meetza.png
+│   ├── qwizzy.png
+│   └── tasknest.png
+├── profile/
+│    └── aya-helal.png
+
 ```
 
 ---

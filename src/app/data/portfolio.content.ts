@@ -1,4 +1,4 @@
-export type ProjectTheme = 'meetza' | 'qwizzy' | 'tasknest';
+export type ProjectTheme = 'meetza' | 'qwizzy' | 'tasknest' | 'clinic management';
 export type SkillColor = 'mint' | 'yellow' | 'peach' | 'blue';
 
 export interface Project {
@@ -9,6 +9,7 @@ export interface Project {
   stack: string[];
   role: string;
   theme: ProjectTheme;
+  image: string;
   problem: string;
   solution: string;
   challenges: string;
@@ -50,9 +51,10 @@ export const projects: Project[] = [
     type: 'AI Video Conferencing Platform',
     description:
       'AI-powered video conferencing with real-time meetings, messaging, and screen sharing.',
-    stack: ['React', 'WebRTC', 'Socket.IO', 'REST APIs', 'Bootstrap'],
+    stack: ['React', 'WebRTC', 'Socket.IO', 'REST APIs', 'Bootstrap' , 'Jira' , 'Agile Scrum'],
     role: 'Frontend Developer · Project Manager',
     theme: 'meetza',
+    image: '/projects/meetza.png',
     problem:
       'Remote teams needed a focused space to meet, communicate, and share context without stitching several tools together.',
     solution:
@@ -71,6 +73,7 @@ export const projects: Project[] = [
     stack: ['React', 'Bootstrap', 'REST APIs' , 'Jira' , 'Agile Scrum' , 'SOLID Principles'],
     role: 'Project Manager · Frontend Developer',
     theme: 'qwizzy',
+    image: '/projects/qwizzy.png',
     problem:
       'Quiz experiences can feel slow and confusing when users cannot understand their progress or results immediately.',
     solution:
@@ -86,9 +89,10 @@ export const projects: Project[] = [
     type: 'Task Management Application',
     description:
       'Task management with authentication, CRUD operations, analytics, and user profiles.',
-    stack: ['Angular 21', 'TypeScript', 'Supabase', 'Tailwind CSS'],
+    stack: ['Angular 21', 'TypeScript', 'Supabase', 'Tailwind CSS' , 'Angular Signals'],
     role: 'Frontend Developer',
     theme: 'tasknest',
+    image: '/projects/tasknest.png',
     problem:
       'Personal productivity tools often bury the next action inside noisy dashboards and complicated workflows.',
     solution:
@@ -97,6 +101,25 @@ export const projects: Project[] = [
       'Building a scalable Angular structure with lazy loading, route guards, and Signals while keeping the interface approachable.',
     learned:
       "How Angular's architecture and Signals can create a strong foundation for products that grow beyond a prototype.",
+  },
+  {
+    number: '04',
+    name: 'Clinic Management',
+    type: 'Clinic Management System',
+    description:
+      'A clinical platform for patient tracking, real-time appointment scheduling, role-based authentication, and performance analytics.',
+    stack: ['React', 'React Router', 'JavaScript', 'Bootstrap 5', 'JSON Server'],
+    role: 'Frontend Developer',
+    theme: 'clinic management',
+    image: '/projects/clinic.png',
+    problem:
+      'Healthcare providers often struggle with scheduling conflicts, fragmented patient records, and inefficient administrative workflows.',
+    solution:
+      'A centralized clinic workspace featuring real-time appointment tracking, role-specific access (Admin, Doctor, Patient), and visual performance dashboards.',
+    challenges:
+      'Implementing role-based access control and state management for real-time schedule updates without performance bottlenecks.',
+    learned:
+      "How to structure scalable React applications using Context API for state management, Axios for REST APIs, and Chart.js for data visualization.",
   },
 ];
 
