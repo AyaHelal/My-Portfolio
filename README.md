@@ -172,12 +172,12 @@ public/
 ├── cv/
 │    └── AyaHelal_Resume.pdf
 ├── projects/
-│   ├── clinic.png
-│   ├── meetza.png
-│   ├── qwizzy.png
-│   └── tasknest.png
+│   ├── clinic.webp
+│   ├── meetza.webp
+│   ├── qwizzy.webp
+│   └── tasknest.webp
 ├── profile/
-│    └── aya-helal.png
+│    └── aya-helal.webp
 
 ```
 
