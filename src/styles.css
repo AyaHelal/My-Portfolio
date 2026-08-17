@@ -68,6 +68,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #3d4934 transparent;
   }
 
   body {
@@ -171,6 +173,25 @@
   transform: translateY(0);
 }
 
+
+/* Thin page scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d4934;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #52683f;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .scroll-hidden {
     opacity: 1;
@@ -178,3 +199,4 @@
     transition: none;
   }
 }
+
