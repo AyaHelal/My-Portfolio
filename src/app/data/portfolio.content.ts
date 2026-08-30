@@ -1,5 +1,5 @@
 export type ProjectTheme = 'meetza' | 'qwizzy' | 'tasknest' | 'clinic management';
-export type SkillColor = 'mint' | 'yellow' | 'peach' | 'blue';
+export type SkillColor = 'mint' | 'yellow' | 'peach' | 'blue' | 'shop';
 
 export interface Project {
   number: string;
@@ -23,7 +23,7 @@ export interface Project {
 }
 
 export interface SkillGroup {
-  icon: 'code-2' | 'layers-3' | 'database' | 'wrench';
+  icon: 'code-2' | 'layers-3' | 'database' | 'wrench' | 'shopping-cart';
   label: string;
   color: SkillColor;
   skills: string[];
@@ -40,12 +40,12 @@ export interface Certification {
 export const personal = {
   name: 'Aya Helal',
   role: 'Frontend Developer',
-  stackLine: 'React · Angular · TypeScript · JavaScript · Tailwind CSS',
+  stackLine: 'Angular · React · Next.js · TypeScript · JavaScript · Tailwind CSS · Bootstrap',
   availability: 'Available for meaningful work',
   intro:
-    'Building responsive and user-focused web applications with React, Angular & TypeScript.',
+    'Building responsive and user-focused web applications with Angular, React, Next.js & TypeScript.',
   about:
-    "I'm a Frontend Developer passionate about building responsive and user-focused web applications. I work mainly with React, Angular, TypeScript, JavaScript, and modern frontend technologies, while continuously improving my problem-solving and development skills.",
+    "I'm a Frontend Developer passionate about building responsive and user-focused web applications. I work mainly with Angular, React, Next.js, TypeScript, JavaScript, and modern frontend technologies, while continuously improving my problem-solving and development skills. I'm also currently expanding my expertise into Shopify development by learning how to build and customize e-commerce experiences using Shopify and Liquid.",
   location: 'Cairo, Egypt',
   education: 'B.Sc. in Computer Science',
 };
@@ -180,13 +180,19 @@ export const skillGroups: SkillGroup[] = [
     icon: 'code-2',
     label: 'Frontend',
     color: 'mint',
-    skills: ['React.js', 'Angular', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3'],
+    skills: ['Angular', 'React.js', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Shopify', 'Liquid'],
   },
   {
     icon: 'layers-3',
     label: 'UI & Styling',
     color: 'yellow',
     skills: ['Tailwind CSS', 'Bootstrap', 'Responsive UI', 'Design Systems'],
+  },
+  {
+    icon: 'shopping-cart',
+    label: 'Shopify & E-commerce',
+    color: 'shop',
+    skills: ['Shopify', 'Liquid', 'Theme Customization', 'E-commerce UX'],
   },
   {
     icon: 'database',
@@ -203,6 +209,12 @@ export const skillGroups: SkillGroup[] = [
 ];
 
 export const certifications: Certification[] = [
+  {
+    badge: 'SHOP',
+    title: 'Frontend & Shopify Intern',
+    meta: 'Conversion Cart Agency · Aug 2026 – Present',
+    link: '#'
+  },
   {
     badge: 'ITI',
     title: 'React.js Summer Code Camp',

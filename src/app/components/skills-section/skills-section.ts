@@ -4,6 +4,7 @@ import {
   LucideDatabase,
   LucideDynamicIcon,
   LucideLayers3,
+  LucideShoppingCart,
   LucideWrench,
 } from '@lucide/angular';
 import { SkillColor, skillGroups } from '../../data/portfolio.content';
@@ -14,6 +15,7 @@ const colorClasses: Record<SkillColor, string> = {
   yellow: 'bg-skill-yellow [&_svg]:text-[#f5c96a]',
   peach: 'bg-skill-peach [&_svg]:text-[#ff9c72]',
   blue: 'bg-skill-blue [&_svg]:text-[#7bd4db]',
+  shop: 'bg-skill-shop [&_svg]:text-[#ffb86c]',
 };
 
 @Component({
@@ -26,6 +28,7 @@ export class SkillsSection {
     private readonly iconMap = {
       'code-2': LucideCode2,
       'layers-3': LucideLayers3,
+      'shopping-cart': LucideShoppingCart,
       database: LucideDatabase,
       wrench: LucideWrench,
     } as const;

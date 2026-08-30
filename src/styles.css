@@ -58,6 +58,7 @@
   --color-skill-yellow: #202017;
   --color-skill-peach: #201a15;
   --color-skill-blue: #151c1e;
+  --color-skill-shop: #1b1714;
 
   --color-hero-grid: rgba(166, 192, 115, 0.15);
   --color-hero-ring: rgba(216, 255, 103, 0.43);
@@ -139,6 +140,7 @@
     --color-skill-yellow: #faf5e8;
     --color-skill-peach: #faf0e8;
     --color-skill-blue: #e8f3f5;
+    --color-skill-shop: #f9efe8;
 
     --color-hero-grid: rgba(90, 110, 55, 0.22);
     --color-hero-ring: rgba(105, 135, 35, 0.48);
