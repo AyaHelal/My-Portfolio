@@ -1,4 +1,4 @@
-export type ProjectTheme = 'meetza' | 'qwizzy' | 'tasknest' | 'clinic management';
+export type ProjectTheme = 'meetza' | 'qwizzy' | 'tasknest' | 'clinic management' | 'applytrack';
 export type SkillColor = 'mint' | 'yellow' | 'peach' | 'blue' | 'shop';
 
 export interface Project {
@@ -172,6 +172,35 @@ export const projects: Project[] = [
     url: 'https://github.com/AyaHelal/clinic-backend',
   }
   ],
+  },
+  {
+    number: '05',
+    name: 'ApplyTrack',
+    type: 'Job Application Tracking SaaS',
+    description:
+      'A full-stack SaaS application that helps job seekers organize and track their applications in one place.',
+    stack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Prisma',
+      'PostgreSQL',
+      'Clerk',
+      'Server Actions',
+      'Vercel',
+    ],
+    role: 'Full-Stack Developer',
+    theme: 'applytrack',
+    image: '/projects/ApplyTrack.webp',
+    problem:
+      'Job seekers often lose track of application progress, follow-ups, and important role details across scattered documents and inboxes.',
+    solution:
+      'A focused workspace for managing applications with authentication, CRUD operations, search, status tracking, dashboard statistics, and profile management.',
+    challenges:
+      'Designing secure user-specific data flows across Clerk authentication, Next.js Server Actions, Prisma, and PostgreSQL while keeping the dashboard responsive.',
+    learned:
+      'How full-stack patterns in Next.js can connect a reliable data layer with a focused, responsive product experience.',
   },
 ];
 
