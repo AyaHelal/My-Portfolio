@@ -241,7 +241,7 @@ export const certifications: Certification[] = [
   {
     badge: 'SHOP',
     title: 'Frontend & Shopify Intern',
-    meta: 'Conversion Cart Agency · Aug 2026 – Present',
+    meta: 'Conversion Cart Agency · September 2026 – Present',
     link: '#'
   },
   {
