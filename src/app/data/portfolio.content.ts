@@ -40,12 +40,12 @@ export interface Certification {
 export const personal = {
   name: 'Aya Helal',
   role: 'Frontend Developer',
-  stackLine: 'Angular · React · Next.js · TypeScript · JavaScript · Tailwind CSS · Bootstrap',
+  stackLine: 'Angular · React · Next.js · Shopify · Liquid · TypeScript · JavaScript · Tailwind CSS · Bootstrap',
   availability: 'Available for meaningful work',
   intro:
-    'Building responsive and user-focused web applications with Angular, React, Next.js & TypeScript.',
+    'Building responsive and user-focused web applications and e-commerce experiences with Angular, React, Next.js, TypeScript and Shopify',
   about:
-    "I'm a Frontend Developer passionate about building responsive and user-focused web applications. I work mainly with Angular, React, Next.js, TypeScript, JavaScript, and modern frontend technologies, while continuously improving my problem-solving and development skills. I'm also currently expanding my expertise into Shopify development by learning how to build and customize e-commerce experiences using Shopify and Liquid.",
+    "I'm a Computer Science graduate and Front-End Developer passionate about building responsive, user-friendly web applications and e-commerce experiences. I work with React, Angular, Next.js, TypeScript and JavaScript to create modern web applications. I'm also gaining hands-on experience in Shopify theme development, using Liquid to customize storefronts and translate Figma designs into responsive e-commerce experiences. Beyond development, I'm interested in UI/UX design and Conversion Rate Optimization (CRO). I've been expanding my understanding of user behavior and how thoughtful design and data-driven improvements can help e-commerce websites increase conversions and deliver better user experiences.",
   location: 'Cairo, Egypt',
   education: 'B.Sc. in Computer Science',
 };
@@ -209,31 +209,31 @@ export const skillGroups: SkillGroup[] = [
     icon: 'code-2',
     label: 'Frontend',
     color: 'mint',
-    skills: ['Angular', 'React.js', 'Next.js', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Shopify', 'Liquid'],
+    skills: ['Angular', 'React.js', 'Next.js', 'TypeScript', 'JavaScript'],
   },
   {
     icon: 'layers-3',
     label: 'UI & Styling',
     color: 'yellow',
-    skills: ['Tailwind CSS', 'Bootstrap', 'Responsive UI', 'Design Systems'],
+    skills: ['HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'Responsive UI', 'Design Systems'],
   },
   {
     icon: 'shopping-cart',
     label: 'Shopify & E-commerce',
     color: 'shop',
-    skills: ['Shopify', 'Liquid', 'Theme Customization', 'E-commerce UX'],
+    skills: ['Shopify', 'Shopify Theme Development', 'Liquid', 'Theme Customization', 'E-commerce UX' , 'Conversion Rate Optimization (CRO)'],
   },
   {
     icon: 'database',
     label: 'State & Data',
     color: 'peach',
-    skills: ['Redux','RxJS', 'REST APIs'],
+    skills: ['Redux', 'TanStack Query', 'RxJS', 'REST APIs'],
   },
   {
     icon: 'wrench',
     label: 'Tools',
     color: 'blue',
-    skills: ['Git', 'GitHub', 'Postman', 'Jira'],
+    skills: ['Git', 'GitHub', 'Postman', 'Jira', 'Figma'],
   },
 ];
 
